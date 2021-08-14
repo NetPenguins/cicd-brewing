@@ -1,6 +1,9 @@
 # BreweryExample
+[Live Preview](https://breweries-example.netlify.app)
+ > This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+This project leverages the api found at [OpenBrewery DB](https://www.openbrewerydb.org) and 
+generates a grid/list of breweries based on a ZIP code passed in || a state selected. Simple Project highlighting how Angular works. 
 
 ## Development server
 
