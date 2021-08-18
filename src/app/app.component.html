@@ -2,7 +2,7 @@
   <img
     width="80"
     alt="Angular Logo"
-    src="assets/banner.png"
+    src="assets/eslabs.png"
   />
   <strong>Labs</strong>
   <div class="spacer"></div>
@@ -44,8 +44,8 @@
 <div class="card-container">
   <div class="card">
     <strong>Search by Zip</strong>
-    <input type="text" id="zip" name="zip" #zip><br>
-    <button (click)="onSearch(zip.value)">Search</button>
+    <input type="text" id="zip" [(ngModel)]="zip"><br>
+    <button (click)="onSearch()">Search</button>
   </div>
 </div>
 <div class="card-container">

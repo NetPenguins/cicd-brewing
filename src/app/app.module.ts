@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UiStyleToggleService } from './services/ui-style-toggle.service';
 import { StorageService } from './services/local-storage.service';
+import { FormsModule } from '@angular/forms';
 
 export function themeFactory(themeService: UiStyleToggleService) {
   return () => themeService.setThemeOnStart();
@@ -17,7 +18,8 @@ export function themeFactory(themeService: UiStyleToggleService) {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [
     UiStyleToggleService,
