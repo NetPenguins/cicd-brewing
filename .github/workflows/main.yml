@@ -48,7 +48,7 @@ jobs:
       - name: Push Build to Releases
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "dist/brewery-example/*"
+          artifacts: "dist/brewery-example/"
           allowUpdates: true
           prerelease: true
           token: ${{ secrets.TOKEN }}
