@@ -6,9 +6,8 @@ name: Brewing
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    tags:
+    - '*'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -49,5 +48,8 @@ jobs:
       - name: Push Build to Releases
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "dist/angular-githubaction/*"
+          artifacts: "dist/brewery-example/"
+          allowUpdates: true
+          prerelease: true
           token: ${{ secrets.TOKEN }}
+          tag: 0.2
